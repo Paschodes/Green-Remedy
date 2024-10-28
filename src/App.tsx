@@ -1,13 +1,12 @@
-
+import { Route, Routes } from "react-router-dom";
+import Landing from "./modules/landingPage";
 
 function App() {
-  
   return (
-    <div>
-      <h1>Vite + React</h1>
-      
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Landing />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
